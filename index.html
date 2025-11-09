@@ -7,12 +7,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Ghs Recipe</h1>
+  <h1>Ghs Recipe Manager</h1>
 
   <div class="top">
     <h2>Add Recipe Details Here:</h2>
-    <input type="text" id="name" placeholder="Recipe Name">
-    <input type="text" id="desc" placeholder="Recipe Description">
+
+    <input type="text" id="title" placeholder="Recipe Title">
+    <textarea id="ingredients" placeholder="Ingredients (separate by commas)"></textarea>
+    <textarea id="instructions" placeholder="Instructions"></textarea>
+    <input type="file" id="image" accept="image/*">
+
     <button onclick="addOrUpdateRecipe()">Save Recipe</button>
   </div>
 
